@@ -1,0 +1,14 @@
+//“Hello World”と表示する関数を作成しなさい。
+
+#include <stdio.h>
+
+void hello() {
+	printf("Hello World");
+}
+
+
+int main() {
+	hello();
+
+	return 0;
+}
