@@ -1,0 +1,16 @@
+//printf 関数と次の書式指定文字列を使用して、自分の誕生日を表示するプログラムを作成しなさい。
+
+#include <stdio.h>
+
+int main() {
+	int y,m,d;
+
+	printf("生年月日を記入ください。\n");
+	scanf_s("%d",&y);
+	scanf_s("%d", &m);
+	scanf_s("%d", &d);
+
+	printf("%d年%d月%d日です。\n",y,m,d);
+
+	return 0;
+}
