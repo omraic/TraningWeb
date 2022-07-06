@@ -1,0 +1,14 @@
+/*int 型の変数 x に数値を入力し、x の値を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x;
+
+	printf("xの値を入力してください。\n");
+	scanf_s("%d",&x);
+
+	printf("x=%dです。\n",x);
+
+	return 0;
+}
