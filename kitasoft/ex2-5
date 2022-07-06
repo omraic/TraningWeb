@@ -1,0 +1,19 @@
+/*int 型の変数 x、y に任意の数値を代入し、
+x の値を y に、y の値を x に入れ替えて x と y の値を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x, y;
+
+
+	x = 13;
+	y = 17;
+
+	int s = x;
+	x = y;
+	y = s;
+	printf("x=%d,y=%dです。\n",x,y);
+
+	return 0;
+}
