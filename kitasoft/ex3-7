@@ -1,0 +1,14 @@
+/*int 型の変数 x に任意の数値を代入し、
+x を x より小さい任意の数値で割った商と余りを表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x = 3;
+
+
+	printf("x=%d\n",x);
+	printf("x/2は%d...%d\n", x/2,x%2 );
+
+	return 0;
+}
