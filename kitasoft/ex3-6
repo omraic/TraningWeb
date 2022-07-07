@@ -1,0 +1,15 @@
+/*int 型の変数 x に任意の数値を代入し、
+x を 1 乗、2 乗、3 乗した結果を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x = 3;
+
+	printf("x=%d\n",x);
+	printf("x^1は%d\n", x );
+	printf("x^2は%d\n", x * x);
+	printf("x^3は%d\n", x * x * x);
+
+	return 0;
+}
