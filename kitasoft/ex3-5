@@ -1,0 +1,15 @@
+/*int 型の変数 x に任意の数値を代入し、
+x を 2 倍、3 倍、4 倍した結果を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x = 3;
+
+	printf("x=%d\n",x);
+	printf("x*=2は%d\n", x * 2);
+	printf("x*=3は%d\n", x * 3);
+	printf("x*=4は%d\n", x * 4);
+
+	return 0;
+}
