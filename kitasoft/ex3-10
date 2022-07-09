@@ -1,0 +1,25 @@
+/*int 型の変数 x、y にそれぞれ数値を入力し、
+x と y の和、差（ x － y ）、積、商（ x ÷ y ）、余り、を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x,y;
+	printf("xの値を入力してください。\n");
+	scanf_s("%d",&x);
+	printf("yの値を入力してください。\n");
+	scanf_s("%d", &y);
+
+	printf("x=%d,y=%d\n",x,y);
+	int ans = x - y;
+	printf("x-yは%d\n", ans);
+	ans = x + y;
+	printf("x+yは%d\n", ans);
+	ans = x / y;
+	int am = x % y;
+	printf("x/yは%d...%d\n", ans,am);
+	ans = x * y;
+	printf("x*yは%d\n", ans);
+
+	return 0;
+}
