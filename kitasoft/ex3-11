@@ -1,0 +1,18 @@
+/*２つの整数値を入力し、平均値を求めるプログラムを作成しなさい。
+※ 	計算は整数で行い、小数点以下は切り捨ててよい。*/
+
+#include <stdio.h>
+
+int main() {
+	int a, b;
+	printf("aの値を入力してください。\n");
+	scanf_s("%d",&a);
+	printf("bの値を入力してください。\n");
+	scanf_s("%d", &b);
+
+	int ave = (a + b) / 2;
+
+	printf("平均は%dです。\n",ave);
+
+	return 0;
+}
