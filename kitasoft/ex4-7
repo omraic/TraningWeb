@@ -1,0 +1,72 @@
+/*試験の点数を入力し、対応する成績を表示するプログラムを３種類作成しなさい。
+試験は 100 点満点（ 0 点 ～ 100 点）とし、点数と成績の対応を以下のようにします。
+
+ケース1
+    60 点以上：“合格”
+    60 点未満：“不合格”
+
+ケース2
+    80 点以上：“たいへんよくできました。”
+    60 点以上、80 点未満：“よくできました。”
+    60 点未満：“ざんねんでした。”
+
+ケース3
+    80 点以上：“優”
+    70 点以上、80 点未満：“良”
+    60 点以上、70 点未満：“可”
+    60 点未満：“不可”*/
+
+#include <stdio.h>
+
+void case1(int x);
+void case2(int x);
+void case3(int x);
+
+int main(void) {
+	int x;
+	printf("テストの点数を入力してください。\n");
+	scanf_s("%d",&x);
+
+    case1(x);
+    case2(x);
+    case3(x);
+
+    return 0;
+}
+
+void case1(int x){
+    if (x>=60) {
+        printf("合格\n");
+    }
+    else {
+        printf("不合格\n");
+    }
+    return;
+}
+
+void case2(int x) {
+    if(x>=80){
+        printf("たいへんよくできました。\n");
+    }
+    else if(x >=60) {
+        printf("よくできました。\n");
+    }
+    else {
+        printf("ざんねんでした。\n");
+    }
+    return;
+}
+
+void case3(int x) {
+    if (x>=80) {
+        printf("優\n");
+
+    }else if(x>=70){
+        printf("良\n");
+    }else if (x >= 60) {
+        printf("可\n");
+    }else{
+        printf("不可\n");
+    }
+    return;
+}
