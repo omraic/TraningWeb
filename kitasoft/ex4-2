@@ -1,0 +1,22 @@
+/*int 型の変数 x、y にそれぞれ数値を入力し、
+x が ｙ より大きい場合には“x は y より大きい”、
+x が y より小さい場合には“xはyより小さい”と表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main() {
+	int x, y;
+	printf("xの値を入力してください。\n");
+	scanf_s("%d",&x);
+	printf("yの値を入力してください。\n");
+	scanf_s("%d", &y);
+
+	if (x>y) {
+		printf("xはyより大きい\n");
+	}
+	else if (x<y) {
+		printf("xはyより小さい\n");
+	}
+	
+	return 0;
+}
