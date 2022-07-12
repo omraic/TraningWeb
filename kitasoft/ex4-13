@@ -1,0 +1,72 @@
+/*月を表す数値を入力し、その月の日数を表示するプログラムを作成しなさい。2 月は 28 日とします。
+また、1 ～ 12 以外の数値が入力された場合に、“入力が間違っています”と表示しなさい。
+※ 	switch文を使用すること。
+*/
+
+#include <stdio.h>
+
+int main(void){
+	int mh;
+
+	printf("月を入力してください。\n");
+	
+	scanf_s("%d",&mh);
+
+	switch(mh){
+	case 1:
+		printf("31日\n");
+		break;
+	
+	case 2:
+		printf("28日\n");
+		break;
+	
+	case 3:
+		printf("31日\n");
+		break;
+	
+	case 4:
+		printf("30日\n");
+		break;
+	
+	case 5:
+		printf("31日\n");
+		break;
+	
+	case 6:
+		printf("30日\n");
+		break;
+
+	case 7:
+		printf("31日\n");
+		break;
+
+	case 8:
+		printf("31日\n");
+		break;
+
+	case 9:
+		printf("30日\n");
+		break;
+
+	case 10:
+		printf("31日\n");
+		break;
+
+	case 11:
+		printf("30日\n");
+		break;
+
+	case 12:
+		printf("31日\n");
+		break;
+
+	default:
+		printf("入力が間違っています\n");
+		break;
+
+	}
+
+	return 0;
+}
+
