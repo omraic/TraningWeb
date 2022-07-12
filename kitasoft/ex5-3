@@ -1,0 +1,14 @@
+/*2 の 1 乗から 8 乗までを計算し表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+	double sum = 0;
+	for (double i = 1; i < 9; i++) {
+		sum = pow(3,i);
+		printf("3^%f=%f\n", i, sum);
+	}
+	return 0;
+}
