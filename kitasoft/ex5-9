@@ -1,0 +1,27 @@
+/*整数を 10 回入力し、最大値と最小値を求めるプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main(void) {
+	int num, max = 0, min = 0;
+
+	printf("整数を10回入力してください。\n");
+
+	for (int i = 0; i < 10;i++) {
+		printf("%d回目の入力です。\n",i+1);
+		scanf_s("%d",&num);
+		if (i == 0) {
+			min = num;
+		}
+		if(num>max){
+			max = num;
+		}
+		if(min>num){
+			min = num;
+		}
+	}
+	printf("最大値は%dです。\n最小値は%dです。\n",max,min);
+
+	return 0;
+
+}
