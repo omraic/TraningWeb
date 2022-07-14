@@ -1,0 +1,23 @@
+/*整数、0 か 1 を 10 回入力する。これを対戦成績と考え、
+0 を負け、1 を勝ちとして、勝ちの総数、負けの総数を表示するプログラムを作成しなさい。*/
+
+#include <stdio.h>
+
+int main(void) {
+	int num, win=0, lose=0;
+	
+	printf("10回分の勝敗を記入してください。\n0:負け 1:勝ち\n");
+	for (int i = 0; i < 10;i++) {
+		printf("%d回目の勝敗は\n", i+1);
+		scanf_s("%d",&num);
+		if (num == 0) {
+			lose++;
+		}
+		else {
+			win++;
+		}
+	}
+	printf("勝ちの総数:%d\n負けの総数:%d\n",win,lose);
+
+	return 0;
+}
