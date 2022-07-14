@@ -1,0 +1,31 @@
+/*次のプログラムを作成しなさい。
+巨人、阪神戦で毎回の得点を入力する。（1 回 ～ 9 回）
+入力が終わったら、それぞれの得点とどちらが勝ったか、引き分けかを表示する。*/
+
+#include <stdio.h>
+
+int main(void) {
+	int numk, numh;
+	int sumk=0, sumh=0;
+
+	for (int i = 0; i < 9;i++) {
+		printf("%d回の巨人の点数を入力してください。\n",i+1);
+		scanf_s("%d",&numk);
+		sumk += numk;
+
+		printf("%d回の阪神の点数を入力してください。\n", i + 1);
+		scanf_s("%d", &numh);
+		sumh += numh;
+	}
+	printf("巨人:%d,阪神:%d\n",sumk,sumh);
+	if(sumk>sumh){
+		printf("巨人が勝ちました。\n");
+	}else if(sumk<sumh){
+		printf("阪神が勝ちました。\n");
+	}
+	else {
+		printf("引き分けです。\n");
+	}
+
+	return 0;
+}
