@@ -1,0 +1,30 @@
+/*
+サイズを示す数値を入力し、何等かの文字で、
+そのサイズの×印を表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+
+int main(void){
+	int num;
+	printf("サイズを入力してください。\n");
+	scanf_s("%d",&num);
+	
+	for (int i = 0; i < num;i++) {
+		for (int j = 0; j < num; j++) {
+			if(j==i){
+				printf("*");
+			}else if(j==(num-1-i)){
+				printf("*");
+			}
+			else {
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+
+
+
+	return 0;
+}
