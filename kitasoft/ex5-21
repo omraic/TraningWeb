@@ -1,0 +1,21 @@
+/*
+サイズを示す数値を入力し、
+何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
+サイズ 4 の例
+*/
+
+#include <stdio.h>
+
+int main(void){
+	int num;
+	printf("段数を入力してください。\n");
+	scanf_s("%d",&num);
+	for (int i = 0; i < num;i++) {
+		for (int k = 0; k <= i;k++) {
+			printf("$");
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
