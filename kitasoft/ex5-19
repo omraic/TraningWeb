@@ -1,0 +1,21 @@
+/*
+数値を繰り返して入力し、0 が入力されたら入力を止め、
+それまでの合計を表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+
+int main(void){
+	int num, sum = 0;
+	printf("数値を入力してください。\n※0で入力終了。\n");
+
+	for (int i = 1; i < 10;i++) {
+		scanf_s("%d",&num);
+		sum += num;
+		if(num==0){
+			break;
+		}
+	}
+	printf("合計:%d",sum);
+	return 0;
+}
