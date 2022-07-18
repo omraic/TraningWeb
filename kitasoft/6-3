@@ -1,0 +1,51 @@
+/*
+次のプログラムを作成しなさい。
+
+10 個の数値を入力する。
+入力された数値を偶数と奇数に分類して表示する。
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	int num[10],odd[10]={0}, even[10]={0};
+	printf("数値を10回入力してください。\n");
+	for (int i = 0; i < 10; i++) {
+		scanf_s("%d",&num[i]);
+		if (num[i] % 2 == 0) {
+			for (int j = 0; j < 10; j++) {
+				if (even[j] == 0) {
+					even[j] = num[i];
+					break;
+				}
+			}
+		}
+		else if (num[i] % 2 != 0) {
+			for (int j = 0; j < 10;j++) {
+				if(odd[j]==0) {
+					odd[j] = num[i];
+					break;
+				}
+			}
+		}
+	}
+
+	printf("偶数:");
+	for (int i = 0; i < 10;i++) {
+		if(even[i]!=0) {
+			printf("%d ", even[i]);
+		}
+	}
+	printf("\n");
+
+	printf("奇数:");
+	for (int i = 0; i < 10;i++) {
+		if(odd[i]!=0) {
+			printf("%d ", odd[i]);
+		}
+	}
+
+	printf("\n");
+
+	return 0;
+}
