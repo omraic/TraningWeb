@@ -1,0 +1,30 @@
+/*
+1 桁の数値（ 1 ～ 9 に限定）を２つ入力し、
+その積を表示するプログラムを作成しなさい。
+ただし、九九の計算結果が入った配列を予め作成して利用すること。（前問を参考に）
+*/
+
+#include <stdio.h>
+
+int main(void) {
+    int kuku[9][9];
+    int i, j;
+
+    // 配列 kuku に値を代入する
+
+    for (i = 0; i < 9 ;i++) {
+        for (j = 0; j < 9;j++) {
+            kuku[i][j] = (i+1) * (j+1);
+        }
+    }
+
+    int num1, num2;
+
+    printf("数値(1~9)を2つ入力してください。\n");
+    scanf_s("%d",&num1);
+    scanf_s("%d",&num2);
+
+    printf("%d*%dは%dです。\n",num1,num2,kuku[num1-1][num2-1]);
+
+    return 0;
+}
