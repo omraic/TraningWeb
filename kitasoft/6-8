@@ -1,0 +1,34 @@
+/*
+整数を 10 回入力し、小さい順に並べ替えて表示するプログラムを作成しなさい。
+途中
+*/
+
+#include <stdio.h>
+
+int main(void) {
+    int num[10] = { 0 }, min[10] = { 0 };
+
+    printf("数値を10回入力してください。\n");
+
+    for (int i = 0; i < 10;i++) {
+        scanf_s("%d",&num[i]);
+    }
+
+    for (int i = 0; i < 10;i++) {
+        min[i] = num[i];
+        for (int j = 0; j < 10; j++) {
+            if(i=0&&num[j]<min[i]) {
+                min[i] = num[j];
+            }else if(num[j]<min[i]&&num[j]>min[i-1]) {
+                min[i] = num[j];
+            }
+            
+        }
+    }
+
+    for (int i = 0; i < 10;i++) {
+        printf("%d ",min[i]);
+    }
+
+    return 0;
+}
