@@ -1,0 +1,13 @@
+/*
+char 型の変数 a、b、c に文字‘A’、‘B’、‘C’を代入し、３文字連続して“ABC”と表示するプログラムを作成しなさい
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char a = 'A', b = 'B', c = 'C';
+
+	printf("%c%c%c\n",a,b,c);
+
+	return 0;
+}
