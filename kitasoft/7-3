@@ -1,0 +1,26 @@
+/*
+char 型の変数 a に文字‘A’を代入し、その変数に演算を施し、
+小文字‘a’にして表示するプログラムを作成しなさい。
+
+※ 	文字コード（参考として）
+‘A’= 0x41 = 65
+‘a’= 0x61 = 97
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char a = 97;
+
+	for (int i = 97; i < 123;i++) {
+		int x = 97;
+		char a = i;
+		if((i-x)%7==0){
+			printf("\n");
+		}
+		printf("%c",a);
+	}
+	return 0;
+
+
+}
