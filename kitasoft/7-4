@@ -1,0 +1,32 @@
+/*
+次のコードに追加し、
+入力された数値を 16 桁の 2 進数で表示するプログラムを完成させなさい。
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char    sbinary[17];
+	int     value;
+	int     i;
+
+	scanf_s("%d", &value);
+
+	// 配列 sbinaryに'0'か'1'を代入する
+	for (i = 15; i >= 0; i--) {
+		if (value % 2 == 0) {
+			sbinary[i] = '0';
+		}
+		else {
+			sbinary[i] = '1';
+		}
+
+		value /= 2;
+
+	}
+	for (i = 0; i < 16; i++) {
+		printf("%c", sbinary[i]);
+	}
+
+	return 0;
+}
