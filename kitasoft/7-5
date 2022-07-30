@@ -1,0 +1,21 @@
+/*
+次のプログラムを作成しなさい。
+
+文字列を入力する。
+入力された文字列を表示する。
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char    str[100];
+	
+	scanf_s("%s", str,100);
+
+	printf("%s", str);
+
+
+
+
+	return 0;
+}
