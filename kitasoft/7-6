@@ -1,0 +1,28 @@
+/*
+文字列を入力し、その文字列の長さ（文字数）を表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char    str[100];
+	
+	scanf_s("%s", str,100);
+
+	int count = 0;
+	for (int i = 0; i < 100;i++) {
+		if(str[i]!='\0') {
+			count++;
+		}
+		else {
+			break;
+		}
+
+	}
+	printf("%d", count);
+
+
+
+
+	return 0;
+}
