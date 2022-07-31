@@ -1,0 +1,30 @@
+/*
+char 型の配列に“SPAM”という単語を 20 個分格納して表示するプログラムを作成しなさい。
+
+※ 	標準関数を使用しないこと。
+
+
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char spam[100];
+	int count = -1;
+
+	for (int i = 0; i < 20;i++) {
+		int j=i*4;
+		spam[j] = 'S';
+		spam[j+1] = 'P';
+		spam[j+2] = 'A';
+		spam[j+3] = 'M';
+		count += 4;
+	}
+	count++;
+	spam[count] = '\0';
+
+	printf("%s",spam);
+	
+	return 0;
+
+}
