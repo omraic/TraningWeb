@@ -1,0 +1,27 @@
+/*
+文字列を入力し、文字列中のアルファベット小文字を大文字に変換して表示するプログラムを作成しなさい。
+
+※ 	printf 関数を 1 回だけ使用する。（ 1 文字ずつ表示してはいけない）
+
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char    str[100];
+	
+	scanf_s("%s", str,100);
+
+	char os = 'a' - 'A';
+	for (int i = 0; str[i] != '\0';i++) {
+		if(str[i]>='a'&&str[i]<='z') {
+			str[i] -= 'a' - 'A';
+		}
+	}
+
+	printf("%s",str);
+
+
+
+	return 0;
+}
