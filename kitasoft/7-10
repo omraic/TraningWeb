@@ -1,0 +1,33 @@
+/*
+文字列を入力し、文字列中のアルファベット小文字を取り除いて表示するプログラムを作成しなさい。
+
+※ 	printf 関数を 1 回だけ使用する。（ 1 文字ずつ表示してはいけない）
+※ 	入力文字列にスペース（空白）を入れないこと。（scanf の機能による）
+
+
+
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char str[100];
+
+	scanf_s("%s",&str,100);
+
+	char al[100];
+	int j = 0;
+	for (int i = 0; str[i] != '\0';i++) {
+		if(str[i]>='a'&&str[i]<='z') {
+			continue;
+		}
+		else {
+			al[j] = str[i];
+			j++;
+		}
+
+	}
+	al[j] = '\0';
+
+	printf("%s",al);
+}
