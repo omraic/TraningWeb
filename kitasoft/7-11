@@ -1,0 +1,20 @@
+/*
+次のコードに追加し、str1 に str2 を結合して表示するプログラムを完成させなさい。
+
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	char    str1[100] = "Hello ";
+	char    str2[] = "World";
+
+	// str1にstr2を結合する
+	for (int i = 0; i < 5;i++) {
+		str1[5 + i] = str2[i];
+	}
+
+	printf("%s\n", str1);
+
+	return 0;
+}
