@@ -1,0 +1,21 @@
+/*
+１文字を引数として、その文字がアルファベット小文字であれば大文字に変換して返す関数を作成しなさい。（小文字でなければそのままを返す）
+その関数を使用して、入力された文字列を大文字に変換して表示しなさい。
+*/
+
+#include <stdio.h>
+void check(char *x);
+
+int main(void) {
+	char ch = getchar();
+	check(ch);
+	printf("%c",ch);
+
+	return 0;
+}
+
+void check(char *x) {
+	if(x>='a'&&x<='z') {
+		x -= 32;
+	}
+}
