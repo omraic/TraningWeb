@@ -1,0 +1,38 @@
+/*
+サイズを示す数値を引数とし、何等かの文字で例のような三角形を表示する関数を作成しなさい。
+その関数を使用してサイズ 3、4、5 の３つの三角形を表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+void tr(void);
+
+int main(void){
+	tr();
+
+	return 0;
+}
+
+void tr(void) {
+	for (int i = 0; i < 3;i++) {
+		for (int j = 0; j <= i;j++) {
+			printf("$");
+		}
+		printf("\n");
+	}
+
+	printf("\n");
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf("$");
+		}
+		printf("\n");
+	}
+
+	printf("\n");
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf("$");
+		}
+		printf("\n");
+	}
+}
