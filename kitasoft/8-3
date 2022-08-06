@@ -1,0 +1,26 @@
+/*
+次のプログラムを作成しなさい。
+
+10 個の数値を入力する。
+入力された順番と逆の順番で 10 個の数値を表示する。
+ただし、配列の添え字を使用しないこと。
+
+*/
+
+#include <stdio.h>
+
+
+int main(void) {
+	int num[10];
+	int* Nu=num;
+	
+	for (int i = 0; i < 10;i++) {
+		scanf_s("%d",&num[i]);
+	}
+	for (int i = 9; i >= 0;i--) {
+		printf("%d ",Nu[i]);
+	}
+
+	return 0;
+
+}
