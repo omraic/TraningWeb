@@ -1,0 +1,29 @@
+/*
+２つの整数の平均を計算する関数を作成しなさい。２つの int 型引数を取り、結果を戻り値として返すこと。
+また、関数の動作を検証できるようにプログラムを作成しなさい。
+※ 	計算は整数で行い、小数点以下は切り捨ててよい。
+
+*/
+
+#include <stdio.h>
+int avg(int x,int y);
+
+int main(void) {
+	int num1,num2;
+
+	scanf_s("%d",&num1);
+	scanf_s("%d", &num2);
+
+	int ans = avg(num1,num2);
+
+
+	printf("%d",ans);
+	return 0;
+}
+
+int avg(int x,int y){
+	int sum = x + y;
+	sum /= 2;
+
+	return sum;
+}
