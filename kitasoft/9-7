@@ -4,18 +4,31 @@
 */
 
 #include <stdio.h>
-void check(char *x);
+#include <string.h>
+
+char check(char x);
 
 int main(void) {
-	char ch = getchar();
-	check(ch);
-	printf("%c",ch);
+	char ch[100];
+	scanf_s("%s",ch,100);
+
+	int num = strlen(ch);
+	for (int i = 0; i < num;i++) {
+		ch[i]=check(ch[i]);
+	}
+	
+
+
+	printf("%s\n",ch);
 
 	return 0;
 }
 
-void check(char *x) {
+char check(char x) {
 	if(x>='a'&&x<='z') {
-		x -= 32;
+		return x -= 'a' - 'A';
+	}
+	else {
+		return x;
 	}
 }
