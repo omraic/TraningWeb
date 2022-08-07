@@ -1,0 +1,39 @@
+/*
+関数を再帰的に呼び出すことによって、フィボナッチ数列の n 番目の項を計算する関数を作成しなさい。
+最初の２つの項、0 番目を 0、1 番目を 1 とします。
+この関数を使用して、11 番目から 20 番目までの項を表示するプログラムを作成しなさい。
+*/
+
+#include <stdio.h>
+
+int sum(int Num1,int Num2);
+
+int main(void) {
+	int num[21];
+	
+	for (int i = 0; i < 21; i++) {
+		if(i==0){
+			num[i] = 0;
+			continue;
+		}
+		if (i == 1) {
+			num[i] = 1;
+			continue;
+		}
+		num[i]=sum(num[i-2],num[i-1]);
+
+	}
+	
+
+	for (int i = 11; i < 21;i++) {
+		printf("%d ",num[i]);
+	}
+	
+	
+	return 0;
+}
+
+int sum(int Num1,int Num2) {
+	return Num1 + Num2;
+	
+}
